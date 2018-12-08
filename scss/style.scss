@@ -277,6 +277,10 @@ select {
 		font-size: 48px;
 		border: none;
 
+		@media(max-width: 768px) {
+			top: 50%;
+		}
+
 		&:hover {
 			border: none;
 		}

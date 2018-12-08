@@ -935,6 +935,12 @@ select {
   border: none;
 }
 
+@media (max-width: 768px) {
+  .ba-button--next, .ba-button--prev {
+    top: 50%;
+  }
+}
+
 .ba-button--next:hover, .ba-button--prev:hover {
   border: none;
 }
