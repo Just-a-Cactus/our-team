@@ -1,5 +1,6 @@
 @import "normalize";
 @import "layout";
+@import "slick";
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500%7CRoboto:400,900');
 
@@ -120,6 +121,7 @@ select {
 
 	display: flex;
 	align-items: center;
+	position: relative;
 
 	@media screen and (max-width: 768px) {
 		display: block;
@@ -258,7 +260,25 @@ select {
 		border: 1px solid #666666;
 		color: $primary-color;
 	}
+
+	&--next {
+		right: 0;
+	}
+
+	&--prev {
+		left: 0;
+	}
+
+	&--next,
+	&--prev {
+		outline: none;
+		position: absolute;
+		top: 40%;
+		font-size: 48px;
+		border: none;
+
+		&:hover {
+			border: none;
+		}
+	}
 }
-
-
-;
