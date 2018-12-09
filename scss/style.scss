@@ -271,18 +271,47 @@ select {
 
 	&--next,
 	&--prev {
+		z-index: 10;
 		outline: none;
 		position: absolute;
 		top: 40%;
+		background: transparent;
+		line-height: 1;
 		font-size: 48px;
 		border: none;
-
-		@media(max-width: 768px) {
-			top: 50%;
-		}
 
 		&:hover {
 			border: none;
 		}
+	}
+}
+
+.ba-btn-class {
+	position: relative;
+}
+
+.ssd {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+
+	.slick-active {
+		button {
+			background-color: white;
+			border: 3px solid $primary-color;
+		}
+	}
+
+	button {
+		margin: 5px;
+		font-size: 0;
+		background: $primary-color;
+		width: 20px;
+		height: 20px;
+		border: 3px solid $primary-color;
+		border-radius: 50px;
+		outline: none;
 	}
 }

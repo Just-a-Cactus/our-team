@@ -928,21 +928,50 @@ select {
 }
 
 .ba-button--next, .ba-button--prev {
+  z-index: 10;
   outline: none;
   position: absolute;
   top: 40%;
+  background: transparent;
+  line-height: 1;
   font-size: 48px;
   border: none;
 }
 
-@media (max-width: 768px) {
-  .ba-button--next, .ba-button--prev {
-    top: 50%;
-  }
-}
-
 .ba-button--next:hover, .ba-button--prev:hover {
   border: none;
+}
+
+.ba-btn-class {
+  position: relative;
+}
+
+.ssd {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.ssd .slick-active button {
+  background-color: white;
+  border: 3px solid #ffcc00;
+}
+
+.ssd button {
+  margin: 5px;
+  font-size: 0;
+  background: #ffcc00;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #ffcc00;
+  border-radius: 50px;
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */
